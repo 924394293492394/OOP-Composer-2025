@@ -3,8 +3,9 @@
 namespace App;
 
 class Developer extends Worker{
-    public string $position;
 
+    use HasRest;
+    
     public function __construct($name, $age, $hours) {
         parent::__construct($name, $age, $hours);
         // $this->position = "dev30";

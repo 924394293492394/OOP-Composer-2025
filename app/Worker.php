@@ -1,7 +1,7 @@
 <?php
 
 namespace App;
-class Worker {
+abstract class Worker implements WorkerInterface {
 
     public string $name;
     public int $age;
@@ -17,8 +17,8 @@ class Worker {
         $this->hours = $hours;
     }
 
-    public function work(){
-        print_r('im working');
+    public function getHours(): array{
+        return $this->hours;
     }
 
     public function setPosition($value){
