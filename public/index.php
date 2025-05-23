@@ -33,3 +33,15 @@ echo "\n" . $totalHours;
 $salaryObj = new Salary();
 echo "\n" . $totalHours;
 //-----------------------------------------------------------------
+
+
+//-----------------------------------------------------------------
+//полиморфизм
+$designer = new App\Designer('Elena', 23, [7, 7, 5]);
+$workers = [$designer, $developer];
+
+foreach ($workers as $worker){
+    echo "\n" .$worker->work();
+}
+
+//-----------------------------------------------------------------
