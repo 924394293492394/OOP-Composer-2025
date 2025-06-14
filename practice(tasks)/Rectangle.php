@@ -1,8 +1,8 @@
 <?php
 
 namespace Classes;
-
-class Rectangle {
+require_once 'Shape.php';
+class Rectangle extends Shape{
 
     private int $length;
     private int $width;
@@ -18,5 +18,10 @@ class Rectangle {
 
     public function rectanglePerimeter(): int{
         return ($this->length + $this->width) * 2;
+    }
+
+    //test abstract
+    public function calculateArea(){
+        return $this->length * $this->width;
     }
 }
