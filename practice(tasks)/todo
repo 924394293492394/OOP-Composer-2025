@@ -1,0 +1,14 @@
+1. Rectangle Class
+Write a PHP class 'Rectangle' that has properties for length and width. Implement methods to calculate the rectangle's area and perimeter.
+
+2. Circle Class
+Write a PHP class called 'Circle' that has a radius property. Implement methods to calculate the circle's area and circumference.
+
+3. Abstract Shape with Subclasses
+Write a PHP class called 'Shape' with an abstract method 'calculateArea()'. Create two subclasses, 'Triangle' and 'Rectangle', that implement the 'calculateArea()' method.
+
+4. Resizable Interface with Square Class
+Write a PHP interface called 'Resizable' with a method 'resize()'. Implement the 'Resizable' interface in a class called 'Square' and add functionality to resize the square.
+
+5. Vehicle Class
+Write a PHP class called 'Vehicle' with properties like 'brand', 'model', and 'year'. Implement a method to display the vehicle details.
