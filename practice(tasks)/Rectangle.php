@@ -2,6 +2,7 @@
 
 namespace Classes;
 require_once 'Shape.php';
+use Classes\Shape;
 class Rectangle extends Shape{
 
     private int $length;
