@@ -12,3 +12,12 @@ Write a PHP interface called 'Resizable' with a method 'resize()'. Implement the
 
 5. Vehicle Class
 Write a PHP class called 'Vehicle' with properties like 'brand', 'model', and 'year'. Implement a method to display the vehicle details.
+
+6. Library System Class Hierarchy
+Write a PHP a class hierarchy for a library system, including classes like 'LibraryItem', 'Book', 'DVD', etc. Implement appropriate properties and methods for each class.
+
+7. Student Class
+Write a PHP class called 'Student' with properties like 'name', 'age', and 'grade'. Implement a method to display student information.
+
+8. BankAccount Class
+Write a PHP a class called "BankAccount" with properties like "accountNumber" and "balance". Implement methods to deposit and withdraw money from the account.
