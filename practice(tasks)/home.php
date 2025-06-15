@@ -1,5 +1,9 @@
 <?php
 
+use Classes\BankAccount;
+use Classes\Bird;
+use Classes\Dog;
+
 require_once("Rectangle.php");
 require_once("Triangle.php");
 require_once("Circle.php");
@@ -8,6 +12,9 @@ require_once("Vehicle.php");
 require_once("Book.php");
 require_once("DVD.php");
 require_once("Student.php");
+require_once("BankAccount.php");
+require_once("Bird.php");
+require_once("Dog.php");
 
 use Classes\Rectangle;
 use Classes\Triangle;
@@ -42,4 +49,23 @@ $dvd->displayDetails() . "\n";
 
 $student = new Student("Egor", 21, [10, 8, 7, 12, 5, 2, 11]);
 echo "Seventh | ";
-echo $student->tostringAll();
+echo $student->tostringAll() . "\n";
+
+echo "Eighth | " . "\n";
+$bankaccount = new BankAccount();
+echo $bankaccount->getBalance() . "\n";
+$bankaccount->deposit(3500);
+echo $bankaccount->getBalance() . "\n";
+try{
+    $bankaccount->withdraw(4500);
+}catch (ErrorException $e){
+    echo $e->getMessage() . "\n";
+}
+
+echo "Ninth | " . "\n";
+$dog = new Dog();
+$bird = new Bird();
+$dog->eat() . "\n";
+$dog->makeSound() . "\n";
+$bird->eat() . "\n";
+$bird->makeSound() . "\n";

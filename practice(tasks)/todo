@@ -21,3 +21,21 @@ Write a PHP class called 'Student' with properties like 'name', 'age', and 'grad
 
 8. BankAccount Class
 Write a PHP a class called "BankAccount" with properties like "accountNumber" and "balance". Implement methods to deposit and withdraw money from the account.
+
+9. Animal Abstract Class
+Write a PHP abstract class called 'Animal' with abstract methods like 'eat()' and 'makeSound()'. Create subclasses like 'Dog', 'Cat', and 'Bird' that implement these methods.
+
+10. Person Class with __toString()
+Write a PHP class called 'Person' with properties like 'name' and 'age'. Implement the '__toString()' magic method to display person information.
+
+11. Employee Extending Person
+Write a class called 'Employee' that extends the 'Person' class and adds properties like 'salary' and 'position'. Implement methods to display employee details.
+
+12. Product Class with Comparable Interface
+Write a class called 'Product' with properties like 'name' and 'price'. Implement the 'Comparable' interface to compare products based on their prices
+
+13. Logger Class with Static LogCount
+Write a class called 'Logger' with a static property called 'logCount' that keeps track of the number of log messages. Implement a static method to log a message.
+
+14. Math Class with Static Methods
+Write a class called 'Math' with static methods like 'add()', 'subtract()', and 'multiply()'. Use these methods to perform mathematical calculations.
