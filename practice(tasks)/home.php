@@ -3,6 +3,8 @@
 use Classes\BankAccount;
 use Classes\Bird;
 use Classes\Dog;
+use Classes\Employee;
+use Classes\Person;
 
 require_once("Rectangle.php");
 require_once("Triangle.php");
@@ -15,6 +17,8 @@ require_once("Student.php");
 require_once("BankAccount.php");
 require_once("Bird.php");
 require_once("Dog.php");
+require_once("Person.php");
+require_once("Employee.php");
 
 use Classes\Rectangle;
 use Classes\Triangle;
@@ -69,3 +73,13 @@ $dog->eat() . "\n";
 $dog->makeSound() . "\n";
 $bird->eat() . "\n";
 $bird->makeSound() . "\n";
+
+echo "Tenth | " . "\n";
+$person = new Person("Andre", 37);
+echo "\n";
+print($person);
+
+echo "Eleventh | " . "\n";
+$employee = new Employee("Egor", 21, 1750.43, "Fullstack PHP");
+echo "\n";
+print($employee);
