@@ -1,12 +1,5 @@
 <?php
 
-use Classes\BankAccount;
-use Classes\Bird;
-use Classes\Dog;
-use Classes\Employee;
-use Classes\Person;
-use Classes\Product;
-
 require_once("Rectangle.php");
 require_once("Triangle.php");
 require_once("Circle.php");
@@ -21,6 +14,8 @@ require_once("Dog.php");
 require_once("Person.php");
 require_once("Employee.php");
 require_once("Product.php");
+require_once("Logger.php");
+require_once("Math.php");
 
 use Classes\Rectangle;
 use Classes\Triangle;
@@ -30,6 +25,14 @@ use Classes\Vehicle;
 use Classes\Book;
 use Classes\DVD;
 use Classes\Student;
+use Classes\BankAccount;
+use Classes\Bird;
+use Classes\Dog;
+use Classes\Employee;
+use Classes\Person;
+use Classes\Product;
+use Classes\Logger;
+use Classes\Math;
 
 $rect = new Rectangle(4,5);
 echo "Fisrt | " . $rect->rectangleArea(), " ", $rect->calculateArea(), " ", $rect->rectanglePerimeter() . "\n";
@@ -93,3 +96,19 @@ $product->compareTo(new Product("Coffee", 75.5));
 echo "\n";
 Product::compareObjects($product, new Product("Coffee", 75.4));
 echo "\n";
+
+echo "Thirteenth | " . "\n";
+Logger::log("Log message 1");
+Logger::log("Log message 2");
+Logger::log("Log message 3");
+echo "Total log count: " . Logger::$logCount . "\n";
+
+
+echo "Fourteenth | " . "\n";
+$result1 = Math::add(...[14, -7, 9, 28]);
+$result2 = Math::subtract(74, ...[14, -7, 9, 28]);
+$result3 = Math::multiply(...[14, -7, 9, 28]);
+
+echo "Addition: " . $result1 . "\n";
+echo "Subtraction: " . $result2 . "\n";
+echo "Multiplication: " . $result3 . "\n";
