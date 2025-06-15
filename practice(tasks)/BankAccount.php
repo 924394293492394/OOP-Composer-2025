@@ -13,7 +13,7 @@ class BankAccount {
         $this->balance = 0;
     }
     function generateUniqueNumber(): string {
-    return str_pad(random_int(0, 999999), 6, '0', STR_PAD_LEFT);
+        return str_pad(random_int(0, 999999), 6, '0', STR_PAD_LEFT);
     }
 
     public function deposit(float $cash){

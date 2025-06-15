@@ -5,6 +5,7 @@ use Classes\Bird;
 use Classes\Dog;
 use Classes\Employee;
 use Classes\Person;
+use Classes\Product;
 
 require_once("Rectangle.php");
 require_once("Triangle.php");
@@ -19,6 +20,7 @@ require_once("Bird.php");
 require_once("Dog.php");
 require_once("Person.php");
 require_once("Employee.php");
+require_once("Product.php");
 
 use Classes\Rectangle;
 use Classes\Triangle;
@@ -83,3 +85,11 @@ echo "Eleventh | " . "\n";
 $employee = new Employee("Egor", 21, 1750.43, "Fullstack PHP");
 echo "\n";
 print($employee);
+
+echo "Twelfth | " . "\n";
+$product = new Product("Milk", 75.4);
+echo "\n";
+$product->compareTo(new Product("Coffee", 75.5));
+echo "\n";
+Product::compareObjects($product, new Product("Coffee", 75.4));
+echo "\n";
