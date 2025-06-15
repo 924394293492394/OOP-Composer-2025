@@ -7,6 +7,8 @@ require_once("Square.php");
 require_once("Vehicle.php");
 require_once("Book.php");
 require_once("DVD.php");
+require_once("Student.php");
+
 use Classes\Rectangle;
 use Classes\Triangle;
 use Classes\Circle;
@@ -14,6 +16,7 @@ use Classes\Square;
 use Classes\Vehicle;
 use Classes\Book;
 use Classes\DVD;
+use Classes\Student;
 
 $rect = new Rectangle(4,5);
 echo "Fisrt | " . $rect->rectangleArea(), " ", $rect->calculateArea(), " ", $rect->rectanglePerimeter() . "\n";
@@ -35,4 +38,8 @@ $book = new Book("Don Quixote", "Miguel de Cervantes", 1605, "Epic novel");
 $book->displayDetails();
 
 $dvd = new DVD("The Land Before Time", "Charles Grosvenor", 2010, 150);
-$dvd->displayDetails();
+$dvd->displayDetails() . "\n";
+
+$student = new Student("Egor", 21, [10, 8, 7, 12, 5, 2, 11]);
+echo "Seventh | ";
+echo $student->tostringAll();
