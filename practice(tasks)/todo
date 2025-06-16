@@ -39,3 +39,18 @@ Write a class called 'Logger' with a static property called 'logCount' that keep
 
 14. Math Class with Static Methods
 Write a class called 'Math' with static methods like 'add()', 'subtract()', and 'multiply()'. Use these methods to perform mathematical calculations.
+
+15. File Class with Total Size Calculation
+Write a PHP class called 'File' with properties like 'name' and 'size'. Implement a static method to calculate the total size of multiple files.
+
+16. Calculator Class with Private Result
+Write a PHP class called 'Calculator' that has a private property called 'result'. Implement methods to perform basic arithmetic operations like addition and subtraction.
+
+17. ShoppingCart Class
+Write a PHP class called 'ShoppingCart' with properties like 'items' and 'total'. Implement methods to add items to the cart and calculate the total cost.
+
+18. Logger with Singleton Design Pattern
+Write a PHP class called 'Logger' that uses the singleton design pattern to ensure only one instance of the class can be created.
+
+19. Validation Class with Static Methods
+Write a class called 'Validation' with static methods to validate email addresses, passwords, and other common input fields.

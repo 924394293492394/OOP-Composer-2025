@@ -16,6 +16,7 @@ require_once("Employee.php");
 require_once("Product.php");
 require_once("Logger.php");
 require_once("Math.php");
+require_once("File.php");
 
 use Classes\Rectangle;
 use Classes\Triangle;
@@ -33,6 +34,7 @@ use Classes\Person;
 use Classes\Product;
 use Classes\Logger;
 use Classes\Math;
+use Classes\File;
 
 $rect = new Rectangle(4,5);
 echo "Fisrt | " . $rect->rectangleArea(), " ", $rect->calculateArea(), " ", $rect->rectanglePerimeter() . "\n";
@@ -112,3 +114,21 @@ $result3 = Math::multiply(...[14, -7, 9, 28]);
 echo "Addition: " . $result1 . "\n";
 echo "Subtraction: " . $result2 . "\n";
 echo "Multiplication: " . $result3 . "\n";
+
+echo "Fifteenth | " . "\n";
+$file1 = new File("file1.txt", 1300);
+$file2 = new File("file2.txt", 2200);
+$file3 = new File("file3.txt", 1400);
+
+$files = [$file1, $file2, $file3];
+$totalSize = File::calculateTotalSize(...$files);
+
+echo "Total size of files: " . $totalSize . " bytes";
+
+echo "Sixteenth | " . "\n";
+
+echo "Seventeenth | " . "\n";
+
+echo "Eightteenth | " . "\n";
+
+echo "Nineteenth (LAST) | " . "\n";
