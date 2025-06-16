@@ -20,6 +20,8 @@ require_once("Logger.php");
 require_once("Math.php");
 require_once("File.php");
 require_once("Calculator.php");
+require_once("Loggerr.php");
+require_once("ShoppingCart.php");
 
 use Classes\Rectangle;
 use Classes\Triangle;
@@ -38,6 +40,8 @@ use Classes\Product;
 use Classes\Logger;
 use Classes\Math;
 use Classes\File;
+use Classes\Loggerr;
+use Classes\ShoppingCart;
 
 $rect = new Rectangle(4,5);
 echo "Fisrt | " . $rect->rectangleArea(), " ", $rect->calculateArea(), " ", $rect->rectanglePerimeter() . "\n";
@@ -137,7 +141,19 @@ $calculator->subtract(32);
 echo $calculator->getResult() . "\n";
 
 echo "Seventeenth | " . "\n";
+$cart = new ShoppingCart();
+$cart->add(['name' => 'Игровая мышь', 'price' => 29.99]);
+$cart->add(['name' => 'Клавиатура', 'price' => 49.99]);
+$cart->add(['name' => 'Монитор', 'price' => 199.99]);
+
+echo "Товары в корзине:\n";
+print_r($cart->getItems());
+echo "Итоговая сумма: {$cart->getTotal()}";
 
 echo "Eightteenth | " . "\n";
+$logger = Loggerr::getInstance();
+$logger->log("Egor CEO");
+$logger->log("16.06.2025 21 OLD");
+$logger->getLogs();
 
 echo "Nineteenth (LAST) | " . "\n";
