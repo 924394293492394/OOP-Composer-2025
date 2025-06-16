@@ -1,5 +1,7 @@
 <?php
 
+use Classes\Calculator;
+
 require_once("Rectangle.php");
 require_once("Triangle.php");
 require_once("Circle.php");
@@ -17,6 +19,7 @@ require_once("Product.php");
 require_once("Logger.php");
 require_once("Math.php");
 require_once("File.php");
+require_once("Calculator.php");
 
 use Classes\Rectangle;
 use Classes\Triangle;
@@ -126,6 +129,12 @@ $totalSize = File::calculateTotalSize(...$files);
 echo "Total size of files: " . $totalSize . " bytes";
 
 echo "Sixteenth | " . "\n";
+$calculator = new Calculator();
+echo $calculator->getResult() . "\n";
+$calculator->add(...[14, -7, 9, 28]);
+echo $calculator->getResult() . "\n";
+$calculator->subtract(32);
+echo $calculator->getResult() . "\n";
 
 echo "Seventeenth | " . "\n";
 
