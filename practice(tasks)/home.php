@@ -22,6 +22,7 @@ require_once("File.php");
 require_once("Calculator.php");
 require_once("Loggerr.php");
 require_once("ShoppingCart.php");
+require_once("Validation.php");
 
 use Classes\Rectangle;
 use Classes\Triangle;
@@ -42,6 +43,7 @@ use Classes\Math;
 use Classes\File;
 use Classes\Loggerr;
 use Classes\ShoppingCart;
+use Classes\Validation;
 
 $rect = new Rectangle(4,5);
 echo "Fisrt | " . $rect->rectangleArea(), " ", $rect->calculateArea(), " ", $rect->rectanglePerimeter() . "\n";
@@ -157,3 +159,27 @@ $logger->log("16.06.2025 21 OLD");
 $logger->getLogs();
 
 echo "Nineteenth (LAST) | " . "\n";
+$email = "admin@example.com";
+$password = "password123";
+$field = "";
+
+if (Validation::validateEmail($email)) {
+    echo "Email is valid.";
+} else {
+    echo "Email is invalid.";
+}
+echo "\n";
+
+if (Validation::validatePassword($password)) {
+    echo "Password is valid.";
+} else {
+    echo "Password is invalid.";
+}
+echo "\n";
+
+if (Validation::validateField($field)) {
+    echo "Field is valid.";
+} else {
+    echo "Field is invalid.";
+}
+echo "\n";
